@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: docverse-ai
+    runtime: python
+    buildCommand: pip install -r ai_integration/requirements.txt
+    startCommand: python ai_integration/gemini_web2api.py
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: GEMINI_COOKIE
+        sync: false
