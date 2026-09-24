@@ -1,0 +1,16 @@
+{
+  "name": "docverse-ai",
+  "version": "1.0.0",
+  "description": "DocVerse AI Studio - Full-stack AI workspace powered by Gemini Web2API",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -Command \".\\venv\\Scripts\\python.exe ai_integration/gemini_web2api.py\""
+  },
+  "keywords": [
+    "ai",
+    "gemini",
+    "chat",
+    "document-ai"
+  ],
+  "author": "git-masterontheway",
+  "license": "MIT"
+}
